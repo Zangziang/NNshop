@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./product.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header-inner">
+                <a href="">
+                    <img src="./images/logo.svg" alt="" />
+                </a>
+                <nav class="main-menu">
+                    <ul class="main-menu__list">
+                        <li class="main-menu__item">
+                            <a href="Home.html" class="main-menu__link">Home</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="Shop.html" class="main-menu__link">Shop</a>
+                        </li>
+                        <ul class="menu">
+                            <li>
+                                <a href="">About</a>
+                                <ul class="submenu">
+                                    <li><a href="./Products.html">Products</a></li>
+                                    <li><a href="./Cart.html">Shopping Cart</a></li>
+                                    <li><a href="./Checkout.html">Check Out</a></li>
+
+                                </ul>
+                            </li>
+                        </ul>
+                        <li class="main-menu__item">
+                            <a href="" class="main-menu__link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header-block">
+                    <div class="user">
+                        <span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M20 12V7h2v6h-2m0 4h2v-2h-2m-10-2c2.67 0 8 1.34 8 4v3H2v-3c0-2.66 5.33-4 8-4m0-9a4 4 0 0 1 4 4a4 4 0 0 1-4 4a4 4 0 0 1-4-4a4 4 0 0 1 4-4m0 10.9c-2.97 0-6.1 1.46-6.1 2.1v1.1h12.2V17c0-.64-3.13-2.1-6.1-2.1m0-9A2.1 2.1 0 0 0 7.9 8a2.1 2.1 0 0 0 2.1 2.1A2.1 2.1 0 0 0 12.1 8A2.1 2.1 0 0 0 10 5.9" />
+                            </svg></i></span>
+                    </div>
+                    <div class="search">
+                        <span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"
+                                    d="m21 21l-4.486-4.494M19 10.5a8.5 8.5 0 1 1-17 0a8.5 8.5 0 0 1 17 0Z" />
+                            </svg></span>
+                    </div>
+                    <div class="wishlist">
+                        <span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M7 3C4.239 3 2 5.216 2 7.95c0 2.207.875 7.445 9.488 12.74a.985.985 0 0 0 1.024 0C21.126 15.395 22 10.157 22 7.95C22 5.216 19.761 3 17 3s-5 3-5 3s-2.239-3-5-3" />
+                            </svg></span>
+                    </div>
+                    <div class="cart">
+                        <span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 1024 1024">
+                                <path fill="currentColor"
+                                    d="M922.9 701.9H327.4l29.9-60.9l496.8-.9c16.8 0 31.2-12 34.2-28.6l68.8-385.1c1.8-10.1-.9-20.5-7.5-28.4a34.99 34.99 0 0 0-26.6-12.5l-632-2.1l-5.4-25.4c-3.4-16.2-18-28-34.6-28H96.5a35.3 35.3
+                                     0 1 0 0 70.6h125.9L246 312.8l58.1 281.3l-74.8 122.1a34.96 34.96 0 0 0-3 36.8c6 11.9 18.1 19.4 31.5 19.4h62.8a102.43 102.43 0 0 0-20.6 61.7c0 56.6 46 102.6 102.6 102.6s102.6-46 102.6-102.6c0-22.3-7.4-44-20.6-61.7h161.1a102.43 
+                                     102.43 0 0 0-20.6 61.7c0 56.6 46 102.6 102.6 102.6s102.6-46 102.6-102.6c0-22.3-7.4-44-20.6-61.7H923c19.4 0 35.3-15.8 35.3-35.3a35.42 35.42 0 0 0-35.4-35.2M305.7 253l575.8 1.9l-56.4 315.8l-452.3.8zm96.9 612.7c-17.4 0-31.6-14.2-31.6-31.6c0-17.4 14.2-31.6 31.6-31.6s31.6
+                                      14.2 31.6 31.6a31.6 31.6 0 0 1-31.6 31.6m325.1 0c-17.4 0-31.6-14.2-31.6-31.6c0-17.4 14.2-31.6 31.6-31.6s31.6 14.2 31.6 31.6a31.6 31.6 0 0 1-31.6 31.6" />
+                            </svg></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="banner">
+        <img src="images/927-1440x500.jpg" alt="" />
+    </section>
+    <section class="banner-text">
+        <nav class="product-menu">
+            <ul class="product-menu__list">
+                <li class="product-menu__item">
+                    <a href="Home.html" class="product-menu__link">Home</a>
+                </li>
+                <img src="images/dau.svg" alt="">
+                <li class="product-menu__item">
+                    <a href="" class="product-menu__link">Shop</a>
+                </li>
+                <img src="images/dau.svg" alt="">
+                <img src="images/Line 5.svg" alt="" class="image-product">
+                <li class="product-menu__item">
+
+                    <a href="" class="product-menu__link">Asgaard sofa</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+    <section class="product-detail">
+        <div class="container">
+            <div class="left-col">
+                <div class="thumbs">
+                    <div class="thumbs-banner">
+                        <a class="thumb-image active">
+                            <span><img src="images/Group 96.svg" alt="Asgaard sofa"></span>
+                        </a>
+                        <a class="thumb-image">
+                            <span><img src="images/Group 97.svg" alt="Asgaard sofa"></span>
+                        </a>
+                        <a class="thumb-image">
+                            <span><img src="images/Mask group (1).svg" alt="Asgaard sofa"></span>
+                        </a>
+                        <a class="thumb-image">
+                            <span><img src="images/Mask group.svg" alt="Asgaard sofa"></span>
+                        </a>
+                        <div class="big">
+                            <span id="big-image" class="img" quickbeam="image"><img src="images/Asgaard sofa 3.svg"
+                                    alt=""></span>
+
+                            <div id="banner-gallery" class="swipe">
+                                <div class="swipe-wrap">
+                                    <div
+                                        style="background-image: url('//cdn.shopify.com/s/files/1/1047/6452/products/product_large.png?v=1446769025')">
+                                    </div>
+                                    <div
+                                        style="background-image: url('//cdn.shopify.com/s/files/1/1047/6452/products/tricko1_large.jpg?v=1447104179')">
+                                    </div>
+                                    <div
+                                        style="background-image: url('//cdn.shopify.com/s/files/1/1047/6452/products/tricko2_large.jpg?v=1447104180')">
+                                    </div>
+                                    <div
+                                        style="background-image: url('//cdn.shopify.com/s/files/1/1047/6452/products/tricko3_large.jpg?v=1447104182')">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="detail-socials">
+                                <div class="social-sharing">
+                                    <a target="_blank" class="share-facebook" title="Share"></a>
+                                    <a target="_blank" class="share-twitter" title="Tweet"></a>
+                                    <a target="_blank" class="share-pinterest" title="Pin it"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="right-col">
+                    <h1 itemprop="name">Asgaard sofa</h1>
+                    <div class="product-text">
+                        <div class="price-shipping">
+                            <div class="price" id="price-preview" quickbeam="price" quickbeam-price="800">
+                                25.000.000đ
+                            </div>
+                            <br>
+                            <div class="image-text-products">
+                                <img src="images/Group 88.svg" alt=""> |
+                                <li class="product-menu__item">
+                                    <a href="" class="product-menu__link">5 Customer Review</a>
+                                </li>
+                            </div>
+                            <p class="products-p">Setting the bar as one of the loudest speakers in its class, the
+                                Kilburn is a
+                                compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange
+                                and extended highs for a sound.
+
+                            </p>
+
+                        </div>
+                        <div class="swatches">
+                            <div class="swatch clearfix" data-option-index="0">
+                                <div class="header">Size</div>
+                                <div class="size-selection">
+                                    <input type="radio" id="size-small" name="size" value="Small">
+                                    <label for="size-small">L</label>
+
+                                    <input type="radio" id="size-medium" name="size" value="Medium">
+                                    <label for="size-medium">XL</label>
+
+                                    <input type="radio" id="size-large" name="size" value="Large">
+                                    <label for="size-large">XS</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swatch clearfix" data-option-index="0">
+                            <div class="color-selection">
+                                <div class="header">Color</div>
+                                <div class="color-selection-products">
+                                    <input type="radio" id="color-blue" name="color" value="Blue">
+                                    <label for="color-blue" style="background-color: rgba(129, 109, 250, 1);"></label>
+
+                                    <input type="radio" id="color-red" name="color" value="Red">
+                                    <label for="color-red" style="background-color: rgba(0, 0, 0, 1);"></label>
+
+                                    <input type="radio" id="color-yellow" name="color" value="Yellow">
+                                    <label for="color-yellow" style="background-color: rgba(184, 142, 47, 1);"></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form id="AddToCartForm" class="form-row">
+                        <div class="product-quantity">
+                            <button class="decrement">-</button>
+                            <input type="number" class="quantity" value="1">
+                            <button class="increment">+</button>
+                        </div>
+                        <div class="product-quantity-text">Add To Cart</div>
+                        <div class="product-quantity-text">+ Compare</div>
+                    </form>
+                    <hr>
+                    <div class="tabs">
+
+                        <div class="tab-labels">
+                            <span data-id="1" class="active">SKU :</span>
+                            <span data-id="2">SS001</span>
+                        </div>
+                        <div class="tab-labels">
+                            <span data-id="1" class="active">Category :</span>
+                            <span data-id="2">Sofas</span>
+                        </div>
+                        <div class="tab-labels">
+                            <span data-id="1" class="active">Tags :</span>
+                            <span data-id="2">Sofa, Chair, Home, Shop</span>
+                        </div>
+                        <div class="tab-labels">
+                            <span data-id="1" class="active">Share :</span>
+                            <span data-id="2">
+                                <img src="images/akar-icons_facebook-fill.svg" alt="">
+                                <img src="images/akar-icons_linkedin-box-fill.svg" alt="">
+                                <img src="images/ant-design_twitter-circle-filled.svg" alt="">
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="reviews">
+        <div class="container">
+            <div class="reviews-text-header">
+                <div class="reviews-text">
+
+                    <div class="reviews-selection">
+                        <input type="radio">
+                        <label for="reviews-small">Description</label>
+
+                        <input type="radio">
+                        <label for="reviews-medium">Additional Information</label>
+
+                        <input type="radio">
+                        <label for="reviews-large">Reviews [5]</label>
+                    </div>
+                </div> <br>
+                <p>Embodying the raw, wayward spirit of rock ‘n’ roll, the Kilburn portable active stereo speaker takes
+                    the
+                    unmistakable look and sound of Marshall, unplugs the chords, and takes the show on the road.</p>
+                <br>
+                <p>Weighing in under 7 pounds, the Kilburn is a lightweight piece of vintage styled engineering. Setting
+                    the
+                    bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a
+                    well-balanced audio which boasts a clear midrange and extended highs for a sound that is both
+                    articulate
+                    and pronounced. The analogue knobs allow you to fine tune the controls to your personal preferences
+                    while the guitar-influenced leather strap enables easy and stylish travel.</p>
+                <div class="reviews-image-banner">
+                    <div class="reviews-image">
+                        <img src="images/Group 107.svg" alt="">
+                    </div>
+                    <div class="reviews-image">
+                        <img src="images/Group 107.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="related-roducts">
+        <div class="container">
+            <div class="related-products-footer">
+                <div class="section-heading">
+                    <h2 class="section-heading__title">News</h2>
+                </div>
+                <div class="related-products-body">
+
+                    <div class="products-body">
+                        <div class="product-item">
+                            <div class="product-item-image-wrapper">
+                                <img src="images/Asgaard sofa 3.svg" alt="" class="product-item__thumbnail" />
+                                <span class="product-item__sale_shop">-30%</span>
+                            </div>
+                            <div class="product-item-content">
+                                <h3 class="product-item__name">
+                                    <a href="" class="product-item__link">Syltherine</a>
+                                </h3>
+                                <a href="" class="product-item__cate">Stylish cafe chair</a>
+                                <div class="product-item-price">
+                                    <span class="product-item-price__new">2.500.000đ</span>
+                                    <span class="product-item-price__old">3.500.000đ</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-item">
+                            <div class="product-item-image-wrapper">
+                                <img src="images/Asgaard sofa 3.svg" alt="" class="product-item__thumbnail" />
+                                <span class="product-item__sale_shop">50%</span>
+                            </div>
+                            <div class="product-item-content">
+                                <h3 class="product-item__name">
+                                    <a href="" class="product-item__link">Syltherine</a>
+                                </h3>
+                                <a href="" class="product-item__cate">Stylish cafe chair</a>
+                                <div class="product-item-price">
+                                    <span class="product-item-price__new">2.500.000đ</span>
+                                    <span class="product-item-price__old">3.500.000đ</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-item">
+                            <div class="product-item-image-wrapper">
+                                <img src="images/Asgaard sofa 3.svg" alt="" class="product-item__thumbnail" />
+                                <span class="product-item__sale_shop">50%</span>
+                            </div>
+                            <div class="product-item-content">
+                                <h3 class="product-item__name">
+                                    <a href="" class="product-item__link">Syltherine</a>
+                                </h3>
+                                <a href="" class="product-item__cate">Stylish cafe chair</a>
+                                <div class="product-item-price">
+                                    <span class="product-item-price__new">2.500.000đ</span>
+                                    <span class="product-item-price__old">3.500.000đ</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-item">
+                            <div class="product-item-image-wrapper">
+                                <img src="images/Asgaard sofa 3.svg" alt="" class="product-item__thumbnail" />
+                                <span class="product-item__sale_shop">New</span>
+                            </div>
+                            <div class="product-item-content">
+                                <h3 class="product-item__name">
+                                    <a href="" class="product-item__link">Syltherine</a>
+                                </h3>
+                                <a href="" class="product-item__cate">Stylish cafe chair</a>
+                                <div class="product-item-price">
+                                    <span class="product-item-price__new">2.500.000đ</span>
+                                    <span class="product-item-price__old">3.500.000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="related-products-show">
+                    <label for="">Show More</label>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-list">
+                <div class="footer-item">
+                    <img src="images/logo.svg" alt="" />
+                    <p class="footer__address">
+                        400 University Drive Suite 200 Coral Gables, FL 33134 USA
+                    </p>
+                </div>
+                <div class="footer-nav">
+                    <div class="footer-item">
+                        <h2 class="footer__title">Links</h2>
+                        <ul class="footer-menu-list">
+                            <li class="footer-menu-item">
+                                <a href="" class="footer-menu-link">Home</a>
+                            </li>
+                            <li class="footer-menu-item">
+                                <a href="" class="footer-menu-link">Shop</a>
+                            </li>
+                            <li class="footer-menu-item">
+                                <a href="" class="footer-menu-link">Blog</a>
+                            </li>
+                            <li class="footer-menu-item">
+                                <a href="" class="footer-menu-link">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav">
+                    <div class="footer-item">
+                        <h2 class="footer__title">Help</h2>
+                        <ul class="footer-menu-list">
+                            <li class="footer-menu-item">
+                                <a href="" class="footer-menu-link">Payment Options</a>
+                            </li>
+                            <li class="footer-menu-item">
+                                <a href="" class="footer-menu-link">Returns</a>
+                            </li>
+                            <li class="footer-menu-item">
+                                <a href="" class="footer-menu-link">Privacy Policies</a>
+                            </li>
+                            <li class="footer-menu-item">
+                                <a href="" class="footer-menu-link">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-item">
+                    <h2 class="footer__title">Newsletter</h2>
+                    <form action="" class="newsletter">
+                        <input type="text" class="newsletter__input" placeholder="Enter Your Email Address" />
+
+                        <button class="newsletter__btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">2023 furino. All rights reverved</p>
+        </div>
+    </footer>
+</body>
+
+</html>

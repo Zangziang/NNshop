@@ -1,0 +1,128 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.spad {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.section {
+    display: block;
+}
+.shopping__cart__table {
+    margin-bottom: 30px;
+}
+.shopping__cart__table table tbody tr td.product__cart__item {
+    width: 490px;
+}
+.shopping__cart__table table tbody tr td {
+    padding-bottom: 30px;
+    padding-top: 30px;
+    padding-left: 20px;
+}
+.shopping__cart__table table tbody tr td.product__cart__item .product__cart__item__text {
+    overflow: hidden;
+    padding-top: 21px;
+    
+}
+.table {
+    border-collapse: collapse;
+        border-collapse: separate;
+        text-indent: initial;
+        border-spacing: 2px;
+    
+}
+.shopping__cart__table table tbody tr {
+    border-bottom: 1px solid #f2f2f2;
+}
+.tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+.product__cart__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product__cart__item__pic {
+    margin-right: 10px;
+}
+
+.product__cart__item__text {
+    flex-grow: 1;
+}
+.col-lg-8{
+    padding-right: 50px;
+}
+.col-lg-4{
+    width: 290px;
+}
+.cart__total {
+    background: #f3f2ee;
+    padding: 26px 21px 24px;
+}
+.cart__total ul {
+    padding: 0;
+    margin-bottom: 1rem;
+   
+}
+.cart__total ul li {
+    list-style: none;
+    font-size: 16px;
+    color: #444444;
+    line-height: 40px;
+    overflow: hidden;
+    
+}
+.cart__total ul li span {
+    font-weight: 700;
+    color: #e53637;
+    float: right;
+}
+.cart__total h4{
+    color: #111111;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+.cart__total .primary-btn {
+    display: block;
+    padding: 12px 10px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.primary-btn {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 14px 30px;
+    color: #ffffff;
+    background: #000000;
+    letter-spacing: 4px;
+}
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
+.pro-qty-2 input[type="text"] {
+    width: 40px; /* Điều chỉnh độ rộng input theo ý muốn */
+  }
+
+.cart__price{
+    color: #c0bfba;
+}
+.cart__image{
+    width: 30px;
+    height: 30px;
+}
